@@ -1,0 +1,70 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: config-mgt
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          uri: git@github.com:sumeetmondal/iamsumeet-config-repo
+          ignore-local-ssh-settings: true
+          #search-paths: 'config-repo/{application} Ignore this property for now, we will look into this later
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+          #default-label: develop
+  security:
+    user:
+      name: root
+      password: s3cr3t
